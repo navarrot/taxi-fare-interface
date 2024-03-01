@@ -1,11 +1,11 @@
-let taxiFareApiUrl = 'http://localhost:8001/predict'; // replace with your API endpoint
+let taxiFareApiUrl = 'https://taxifare-2lapr5ij4q-ew.a.run.app' //'http://localhost:8001/predict'; // replace with your API endpoint
 const centralCoordinates = [-74.00597, 40.71427]; // starting position [lng, lat]
 
 if (window.location.href.includes('https://taxifare.lewagon.com')) {
-  taxiFareApiUrl = 'https://taxifare.lewagon.ai/predict';
+  taxiFareApiUrl = 'https://taxifare-2lapr5ij4q-ew.a.run.app';
 }
 
-mapboxgl.accessToken = 'pk.eyJ1Ijoia3Jva3JvYiIsImEiOiJja2YzcmcyNDkwNXVpMnRtZGwxb2MzNWtvIn0.69leM_6Roh26Ju7Lqb2pwQ';
+mapboxgl.accessToken = 'pk.eyJ1IjoibmF2YXJyb3QiLCJhIjoiY2x0OGpiaDRyMHVkOTJrcXJ0d254enVtMSJ9.bR2-ka2X9qx_r7Tn-1_5OA' //'pk.eyJ1Ijoia3Jva3JvYiIsImEiOiJja2YzcmcyNDkwNXVpMnRtZGwxb2MzNWtvIn0.69leM_6Roh26Ju7Lqb2pwQ';
 
 const displayMap = (start, stop) => {
   const map = new mapboxgl.Map({
